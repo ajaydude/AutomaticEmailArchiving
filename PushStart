@@ -1,0 +1,6 @@
+You will need to connect to Exchange Online and force the Managed Mail Assistant to start processing the new rules:
+
+    Install-Module -Name ExchangeOnlineManagement
+    Import-Module ExchangeOnlineManagement
+    Connect-ExchangeOnline
+    Start-ManagedFolderAssistant -Identity <example email>
